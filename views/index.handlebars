@@ -1,0 +1,136 @@
+<body>
+    <!-- Header -->
+    <header id="top" class="header">
+     <div class="container">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="resume.html" style="font-weight: bold;">KHIEM LE</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" class="brand-menu">HOME</a></li>
+                    <li><a href="#projects" class="brand-menu">PROJECTS</a></li>
+                    <li><a href="#footer" class="brand-menu">CONTACT</a></li>
+                    <!--<li><a href="contact.html" class="brand-menu">CONTACT</a></li>-->
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="text-vertical-left">
+                    <h1>Front-end & Back-end Web Developer.</h1>
+                </div>
+                <!--<a href="#about" class="btn btn-dark btn-lg">About Me</a>-->
+                <h4 id="homePageTextWhite">
+                    Experienced in HTML5, CSS3, Javascript, JQuery, Bootstrap, Materialize, Firebase, Ionic Mobile Framework, Node Js, Angular JS, MySQL, Sequelize, MongoDB, Express, & Handlebars JS, React JS, Photoshop, Adobe Premiere, Illustrator, Page Maker, knowledgeable in the computer sciences as well as digital media.</h4>
+                    <!--<h5>Photo by Sabri Tuzcu on 
+                    <a href="https://unsplash.com/search/computer-digital?photo=wkO0q0UTqc8" target="_blank">Unsplash</a></h5>-->
+                    <!-- Projects & Resume links -->
+                    
+                <div>
+                    <a href="#projects" style="width: 14.35em; height: 2.85em; margin-right: 0.5em; margin-top: 0.5em;" class="btn btn-warning"><i class="fa fa-paper-plane"></i>&nbsp;Projects</a>
+
+                    <a href="resume.html" style="background: #616161; border: 1px solid #616161; width: 14.35em; height: 2.85em; margin-top: 0.5em;" class="btn btn-warning"><i class="fa fa-paper-plane"></i>&nbsp;My Resume</a>
+
+                </div>
+
+                    <div class="typeWriterContainer">               
+                        <div class="typewriter">
+                            <embed src="./assets/images/Typing.mp3" autostart="true" loop="true" width="2" height="0"></embed>
+                            <h3>Innovation is my passion!</h3>
+                        </div>
+                    </div>
+                   <!-- <a href="#about" class="btn btn-dark btn-lg">About</a> -->
+
+            </div>
+        </div>
+       </div>
+    </header>
+
+    {{> about }} 
+    {{> projects }}
+        
+  
+
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+    </script>
+
+    </body>

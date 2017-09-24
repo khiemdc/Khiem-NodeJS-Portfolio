@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Khiem Le Portfolio</title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <title>Khiem Le Portfolio</title>
+  </head>
+	<body>
+    <div class="contactBody">
+     <nav>
+      <div class='container'>
+           <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="resume.html" style="font-weight: bold;">KHIEM LE</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../#home" class="brand-menu">HOME</a></li>
+                    <li><a href="../#projects" class="brand-menu">PROJECTS</a></li>
+                    <li><a href="contact.html" class="brand-menu">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+<!--
+    <div data-role="header">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">KHIEM LE</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">HOME</a></li>
+                    <li><a href="badges.html">PROJECTS</a></li>
+                    <li><a href="collapsible.html">CONTACT</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="sass.html">Home</a></li>
+                    <li><a href="badges.html">Projects</a></li>
+                    <li><a href="collapsible.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div> -->
+    <!-- /header -->
+
+            
+            <!-- Projects page
+    <div class="container" style="margin-top: 10%;">
+      <h1 id="subTitle">Projects</h1> -->
+      
+  
+<!-- change the form action to your script url -->
+
+<!--<link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css"> -->
+
+<!-- START HERE -->
+
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+
+            
+    <div class="container">
+      <div class="row">  
+      <div class="col s4" style="padding: 1em;"">
+            
+            <p id="homePageTextWhite" style="text-align:right; font-size: 1.2em; margin-top: 5em;">
+              Experienced in HTML5, CSS3, Javascript, JQuery, Bootstrap, Materialize, Firebase, Ionic Mobile Framework, Node Js, Angular JS, MySQL, Sequelize, MongoDB, Express, & Handlebars JS, Photoshop, Adobe Premiere, Illustrator, Page Maker, knowledgeable in the computer sciences as well as digital media.</p>
+            <!-- Projects & Resume links -->
+            <a href="project.html" style="color: #FFFFFF; float: right;" class="button1" class="btn waves-effect waves-light" type="submit" name="action">Projects<i class="material-icons right">send</i></a>
+            
+  </div>
+
+<div class="col s8">
+<div class="contactContainer"> 
+
+       <p
+           id="projectTitle" style="font-weight: normal;">I would love to hear from you! </p>
+   <!--  </aside> -->
+    
+   
+   <!-- Style The Contact Form How Ever You Prefer -->
+   
+  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbyH1IE-kZsuwSXND6Gl7od-NISWSn7vTJXraavo6YNYbqen2DY/exec">
+
+
+   <fieldset class="pure-group">
+      <label for="name">Name: </label>
+      <input id="name" name="name" placeholder="Your name" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="email"><em>Your</em> Email Address:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.email@gmail.com"/>
+      <span id="email-invalid" style="display:none">
+        Must be a valid email address</span>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="Your message" rows="5"
+      placeholder="Your message..."></textarea>
+    </fieldset>
+
+
+    <fieldset class="pure-group">
+      <label for="color">What's your favourite color: </label>
+      <input id="color" name="color" placeholder="green" />
+    </fieldset>
+
+    <button class="button3" class="pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+  </form>
+
+<!--  </aside> -->
+
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none; margin-top: 4em; margin-bottom: 12em; font-size: 1.5em;" id="thankyou_message">
+    <p><em>Thanks</em> for contacting us!<br>
+      We will get back to you soon!</p>
+  </div>
+
+</div>
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+
+  </div>
+</div>
+</div>
+
+
+
+  <!--Footer Partial-->
+  <footer class="footer">
+    <div class="container" style="text-align: center; margin-bottom: 3%; margin-top: 10%;">
+      <span class="text-muted" style="color: #BFBFBF"> &copy; Khiem Le 2017</span>
+    </div>
+  </footer>
+  <script> 
+  $( document ).ready(function(){
+    $(".button-collapse").sideNav();
+});
+</script>
+</body>
+</html>
