@@ -1021,12 +1021,12 @@ button {
 .typewriter h3 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   /*font-family: 'Roboto', sans-serif;*/
-  font-size: 24px;
+  font-size: 22px;
   color: #FFFFFF;
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .07em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
