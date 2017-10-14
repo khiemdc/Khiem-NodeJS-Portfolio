@@ -26,6 +26,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <title>Khiem Le Portfolio</title>
   </head>
+  <style>
+    a{
+    color: white;
+    }
+  </style>
 	<body>
     <div class="contactBody">
      <nav>
@@ -76,93 +81,98 @@
 
 <!-- START HERE -->
 
+<section id="footer">
    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+     <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+              <!-- <h3><strong>Contact Me</strong></h3> -->
+              <div class="row">
+                <!-- One third of screen (4/12) -->
+                <div class="col-md-4">
+                   <div style="margin-top: 15em; color: white;">
+                    <h4>Khiem Le</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (202) 247-1475</li>
+                        <li><i class="fa fa-envelope-o fa-fw; color: white;"></i> <a href="mailto:khiemle.dc@gmail.com">khiemle.dc@gmail.com</a></li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                        <a href="https://www.linkedin.com/in/khiem-le-070770142/" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/khiemle.52" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/khiemdc" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/khiemDC/" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
 
-            
-    <div class="container">
-      <div class="row">  
-      <div class="col s4" style="padding: 1em;"">
-            
-            <p id="homePageTextWhite" style="text-align:right; font-size: 1.2em; margin-top: 5em;">
-              Experienced in HTML5, CSS3, Javascript, JQuery, Bootstrap, Materialize, Firebase, Ionic Mobile Framework, Node Js, Angular JS, MySQL, Sequelize, MongoDB, Express, & Handlebars JS, Photoshop, Adobe Premiere, Illustrator, Page Maker, knowledgeable in the computer sciences as well as digital media.</p>
-            <!-- Projects & Resume links -->
-            <a href="project.html" style="color: #FFFFFF; float: right;" class="button1" class="btn waves-effect waves-light" type="submit" name="action">Projects<i class="material-icons right">send</i></a>
-            
-  </div>
+                <!-- Two third of screen (8/12) -->
+                <div class="col-md-8">
+                    <div class="contactContainer"> 
+                       <p id="projectTitle" style="font-weight: normal;">I would love to hear from you! </p>
+                        <!--  </aside> -->
+                        <!-- Style The Contact Form How Ever You Prefer -->
+                      <form id="gform" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbyH1IE-kZsuwSXND6Gl7od-NISWSn7vTJXraavo6YNYbqen2DY/exec">
+                        <div> 
+                            <fieldset class="pure-group">
+                              <label for="name">Name: </label>
+                              <input id="name" name="name" placeholder="Your name" />
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="email"><em>Your</em> Email Address:</label>
+                                <input id="email" name="email" type="email" value=""required placeholder="your.email@gmail.com"/>
+                                <span id="email-invalid" style="display:none">Must be a valid email address</span>
+                            </fieldset>
 
-<div class="col s8">
-<div class="contactContainer"> 
+                            <fieldset class="pure-group">
+                                <label for="message">Message: </label>
+                                <textarea id="message" name="Your message" rows="5"
+                                    placeholder="Your message..."></textarea>
+                            </fieldset>
+                            <fieldset class="pure-group">
+                                <label for="color">What's your favourite color: </label>
+                                <input id="color" name="color" placeholder="green"/>
+                            </fieldset>
 
-       <p
-           id="projectTitle" style="font-weight: normal;">I would love to hear from you! </p>
-   <!--  </aside> -->
-    
-   
-   <!-- Style The Contact Form How Ever You Prefer -->
-   
-  <form id="gform" method="POST" class="pure-form pure-form-stacked"
-  action="https://script.google.com/macros/s/AKfycbyH1IE-kZsuwSXND6Gl7od-NISWSn7vTJXraavo6YNYbqen2DY/exec">
-
-
-   <fieldset class="pure-group">
-      <label for="name">Name: </label>
-      <input id="name" name="name" placeholder="Your name" />
-    </fieldset>
-
-    <fieldset class="pure-group">
-      <label for="email"><em>Your</em> Email Address:</label>
-      <input id="email" name="email" type="email" value=""
-      required placeholder="your.email@gmail.com"/>
-      <span id="email-invalid" style="display:none">
-        Must be a valid email address</span>
-    </fieldset>
-
-    <fieldset class="pure-group">
-      <label for="message">Message: </label>
-      <textarea id="message" name="Your message" rows="5"
-      placeholder="Your message..."></textarea>
-    </fieldset>
-
-
-    <fieldset class="pure-group">
-      <label for="color">What's your favourite color: </label>
-      <input id="color" name="color" placeholder="green" />
-    </fieldset>
-
-    <button class="button3" class="pure-button button-xlarge">
-      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-
-  </form>
-
-<!--  </aside> -->
-
-
-  <!-- Customise the Thankyou Message People See when they submit the form: -->
-  <div style="display:none; margin-top: 4em; margin-bottom: 12em; font-size: 1.5em;" id="thankyou_message">
-    <p><em>Thanks</em> for contacting us!<br>
-      We will get back to you soon!</p>
-  </div>
-
-</div>
-  <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" type="text/javascript"
-  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-  <!-- <script data-cfasync="false" type="text/javascript"
-  src="/form-submission-handler.js"></script> -->
-<!-- END -->
-
-  </div>
-</div>
-</div>
-
-
-
-  <!--Footer Partial-->
-  <footer class="footer">
-    <div class="container" style="text-align: center; margin-bottom: 3%; margin-top: 10%;">
-      <span class="text-muted" style="color: #BFBFBF"> &copy; Khiem Le 2017</span>
+                            <button class="button3" class="pure-button button-xlarge"><i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                        </div>
+                    </form>
+                    <!--Thank you message -->
+                    <div style="display:none; margin-top: 1em; margin-bottom: 2em; font-size: 1.5em;" id="thankyou_message">
+                        <p><em>Thanks</em> for contacting us!<br>
+                        We will get back to you soon!</p>
+                    </div>
+                    <!-- Submit the Form to Google Using "AJAX" -->
+                    <script data-cfasync="false" type="text/javascript"
+                    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+                    <!-- <script data-cfasync="false" type="text/javascript"
+                    src="/form-submission-handler.js"></script> -->
+                </div>
+            </div>
+         </div>
+        </div>            
     </div>
-  </footer>
+    <!--Footer Partial-->
+  
+    <div style="text-align: center; margin-bottom: 0.5%; margin-top: 5%;">
+      <span class="text-muted"> &copy; Khiem Le 2017</span>
+    </div>
+  
+    <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+</footer>
+</section>
+
+
+  
   <script> 
   $( document ).ready(function(){
     $(".button-collapse").sideNav();
