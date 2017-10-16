@@ -14,13 +14,13 @@
 });*/ 
 $(document).ready(function(){
     $("#about").mouseover(function(){
-        $("#about").css("background-color", "#C0392B");
+        $("#about").css("background-color", "#701010");
     });
     $("#about").mouseout(function(){
         $("#about").css("background-color", "#e0e0e0");
     });
     $("#quote").mouseover(function(){
-        $("#quote").css("background-color", "#C0392B");
+        $("#quote").css("background-color", "#701010");
     });
     $("#quote").mouseout(function(){
         $("#quote").css("background-color", "#e0e0e0");
@@ -32,7 +32,7 @@ $(window).on("scroll touchmove", function() {
 		
 		
 		if ($(document).scrollTop() >= $("#about").position().top) {
-				$("#about").css("background-color","#C0392B");
+				$("#about").css("background-color","#701010");
 		            
 		} else
 		{
@@ -40,7 +40,7 @@ $(window).on("scroll touchmove", function() {
   		}    
     
     if ($(document).scrollTop() >= $("#quote").position().top) {
-				$("#quote").css("background-color","#C0392B");
+				$("#quote").css("background-color","#701010");
 		}
 		else
 		{
