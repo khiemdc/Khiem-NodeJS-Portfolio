@@ -1,4 +1,4 @@
-/*!
+im/*!
  * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -230,6 +230,8 @@ hr.small {
 
 .img-portfolio:hover {
     opacity: 0.8;
+    transform: scale(1.025);
+    transition: all .25s ease;
 }
 
 /* Call to Action */
